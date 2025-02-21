@@ -14,7 +14,7 @@ public class ques1 {
             ++anos;
         } while (população < 5000);
         
-        System.out.println("Para a populacao vai ter "+população+" habitantes depois de " + anos + " anos.");
+        System.out.println("Para a populacao vai ter 5000 habitantes depois de " + anos + " anos.");
     }
     
 }
