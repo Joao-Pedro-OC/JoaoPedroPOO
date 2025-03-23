@@ -53,10 +53,12 @@ public class ques3 {
             
             // menu
             System.out.print("===== MENU DO RESTAURANTE =====\n1 - Hambúrguer - R$15.00\n2 - Pizza - R$30.00\n3 - Salada - R$12.00\n4 - Refrigerante - R$5.00\n5 - Finalizar pedido\n\nEscolha uma opção: ");
+            
+            // opção do usuário
             pedido = s.nextInt();
             s.nextLine();
                                                                                 
-            //calculando a conta
+            // Processar a opção
             switch (pedido) {
                 case 1:
                     System.out.println("Você adicionou um Hambúrguer ao pedido.");
@@ -80,7 +82,6 @@ public class ques3 {
                 default:
                     System.out.println("Opção inválida!");
             }
-            s.nextLine();
 
             // sair
             if (pedido != 5) {
@@ -89,8 +90,10 @@ public class ques3 {
                 System.out.println();
             }
             
+            // Continue o loop enquanto o pedido NÃO for 5 E a resposta NÃO for "N".
         } while (pedido != 5 && !"N".equals(sair));
         
+        // Mostrar o total do pedido
         System.out.println("Total do pedido: R$"+conta+"\nObrigado por comprar conosco!");
         
     }
